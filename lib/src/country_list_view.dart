@@ -158,10 +158,6 @@ class _CountryListViewState extends State<CountryListView> {
                 ..._favoriteList!
                     .map<Widget>((currency) => _listRow(currency))
                     .toList(),
-                const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 20.0),
-                  child: Divider(thickness: 1),
-                ),
               ],
               ..._filteredList
                   .map<Widget>((country) => _listRow(country))
